@@ -1,0 +1,70 @@
+header {
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+header .logo {
+    width: 7rem;
+    height: 7rem;
+}
+
+header section,
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+header nav a::after {
+    display: block;
+    content: "";
+    width: 0rem;
+    height: 0.2rem;
+    border-radius: 20rem;
+    background-color: #f7f7f7;
+    transition: width 0.2s;
+}
+
+header nav a:hover::after {
+    width: 90%;
+
+}
+
+header .social-icon,
+header .btn>* {
+    font-size: 3.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .btn {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.8rem;
+    border-radius: 100%;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header .btn:hover {
+    background: var(--color2);
+}
+
+header * {
+    color: #f7f7f7;
+}
