@@ -68,3 +68,11 @@ header .btn:hover {
 header * {
     color: #f7f7f7;
 }
+
+@media(max-width: 768px) {
+
+    header,
+    header section:nth-child(1) {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,84 @@
+.login-container section {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem dashed var(--color1);
+    border-radius: 2rem;
+    flex-direction: column;
+    padding: 6rem;
+    background: var(--color4);
+    width: 100vw;
+    max-width: 60rem;
+
+}
+
+.login-container .logo {
+    width: 12rem;
+    height: 12rem;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 114px);
+    margin-inline: 1.5rem;
+}
+
+.login-container section form {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-container section form input {
+    background: none;
+    border: 0.2rem solid var(--color1);
+    width: 100%;
+    padding-inline: 0.8rem;
+    padding-block: 1.2rem;
+    outline: none;
+    border-radius: 0.9rem;
+    font-size: 1.8rem;
+
+}
+
+.login-container section form button {
+    width: 100%;
+    border-radius: 20rem;
+    padding: 1.2rem;
+    border: 0.2rem solid var(--color1);
+    transition: background 0.2s;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.login-container section form button:hover {
+    background: var(--color3);
+
+}
+
+.login-container section a::after {
+    display: block;
+    content: "";
+    width: 0rem;
+    height: 0.1rem;
+    border-radius: 20rem;
+    background-color: #0f0f0f;
+    transition: width 0.2s;
+}
+
+.login-container section a:hover::after {
+    width: 100%;
+
+}
+
+@media(max-width: 768px) {
+    .login-container section {
+        padding: 2rem;
+    }
+
+}

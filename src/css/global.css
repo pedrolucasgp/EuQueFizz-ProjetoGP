@@ -22,7 +22,10 @@ html {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     overflow: overlay;
+    height: 100vh;
+    background-color: #e1e1e1;
 }
+
 
 button:hover {
     cursor: pointer;
