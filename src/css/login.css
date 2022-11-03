@@ -33,7 +33,7 @@
     width: 100%;
 }
 
-.login-container section form input {
+/*.login-container section form input {
     background: none;
     border: 0.2rem solid var(--color1);
     width: 100%;
@@ -44,7 +44,7 @@
     font-size: 1.8rem;
 
 }
-
+*/
 .login-container section form button {
     width: 100%;
     border-radius: 20rem;
@@ -74,6 +74,37 @@
 .login-container section a:hover::after {
     width: 100%;
 
+}
+
+.formulario {
+    background: none;
+    border: 0.2rem solid var(--color1);
+    width: 100%;
+    padding-inline: 0.8rem;
+    padding-block: 1.2rem;
+    outline: none;
+    border-radius: 0.9rem;
+    font-size: 1.8rem;
+}
+
+.btn-default {
+    width: 100%;
+    border-radius: 20rem;
+    padding: 1.2rem;
+    border: 0.2rem solid var(--color1);
+    transition: background 0.2s;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.btn-default:hover {
+    background: var(--color3);
+}
+
+
+.toast-message {
+    color: white;
 }
 
 @media(max-width: 768px) {
