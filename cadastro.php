@@ -20,71 +20,71 @@ require_once("./componentes/footer.php")
 ?>
 <script src="js/toastr.min.js"></script>
 <script>
-$("#cadastro").click(function() {
-    let email = $("#email").val(),
-        senha = $("#senha").val(),
-        nome = $("#nome").val()
+    $("#cadastro").click(function() {
+        let email = $("#email").val(),
+            senha = $("#senha").val(),
+            nome = $("#nome").val()
 
 
-    if (!nome) {
-        $("#nome").focus()
-        $("#nome").css('border', '0.2rem solid red')
-    } else {
-        $("#nome").css('border', '0.2rem solid #c3a8f7')
-    }
+        if (!nome) {
+            $("#nome").focus()
+            $("#nome").css('border', '0.2rem solid red')
+        } else {
+            $("#nome").css('border', '0.2rem solid #c3a8f7')
+        }
 
-    if (!email) {
-        $("#email").focus()
-        $("#email").css('border', '0.2rem solid red')
-    } else {
-        $("#email").css('border', '0.2rem solid #c3a8f7')
-    }
+        if (!email) {
+            $("#email").focus()
+            $("#email").css('border', '0.2rem solid red')
+        } else {
+            $("#email").css('border', '0.2rem solid #c3a8f7')
+        }
 
-    if (!senha) {
-        $("#senha").focus()
-        $("#senha").css('border', '0.2rem solid red')
-    } else {
-        $("#senha").css('border', '0.2rem solid #c3a8f7')
-    }
+        if (!senha) {
+            $("#senha").focus()
+            $("#senha").css('border', '0.2rem solid red')
+        } else {
+            $("#senha").css('border', '0.2rem solid #c3a8f7')
+        }
 
-    let val = {
-        nome: nome,
-        email: email,
-        senha: senha,
-        key: $("#key").val()
-    };
+        let val = {
+            nome: nome,
+            email: email,
+            senha: senha,
+            key: $("#key").val()
+        };
 
-    $.ajax('./sys/cadastrar.php', {
-        type: 'POST',
-        dataType: 'json',
-        data: val
+        $.ajax('./sys/cadastrar.php', {
+            type: 'POST',
+            dataType: 'json',
+            data: val
 
-    }).done(function(r) {
-        Command: toastr[r.tipo](r.msg)
-        toastr.options = {
-            "closeButton": false,
-            "debug": false,
-            "newestOnTop": false,
-            "progressBar": false,
-            "positionClass": "toast-bottom-right",
-            "preventDuplicates": true,
-            "preventOpenDuplicates": true,
-            "onclick": null,
-            "showDuration": "300",
-            "hideDuration": "1000",
-            "timeOut": "5000",
-            "extendedTimeOut": "1000",
-            "showEasing": "swing",
-            "hideEasing": "linear",
-            "showMethod": "fadeIn",
-            "hideMethod": "fadeOut"
-        },
-        setTimeout(function() {
-            window.location.assign("login.php")
+        }).done(function(r) {
+            Command: toastr[r.tipo](r.msg)
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-bottom-right",
+                "preventDuplicates": true,
+                "preventOpenDuplicates": true,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            },
+            setTimeout(function() {
+                window.location.assign("login.php")
 
-        }, 3200);
-    }).fail(function() {
+            }, 3200);
+        }).fail(function() {
 
-    });
-})
+        });
+    })
 </script>

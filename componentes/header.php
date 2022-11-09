@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/cadastrar.css">
     <link
         href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
         rel="stylesheet">

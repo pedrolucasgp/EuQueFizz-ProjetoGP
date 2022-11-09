@@ -33,7 +33,7 @@
     width: 100%;
 }
 
-/*.login-container section form input {
+.login-container section form input {
     background: none;
     border: 0.2rem solid var(--color1);
     width: 100%;
@@ -44,7 +44,7 @@
     font-size: 1.8rem;
 
 }
-*/
+
 .login-container section form button {
     width: 100%;
     border-radius: 20rem;
@@ -101,7 +101,6 @@
 .btn-default:hover {
     background: var(--color3);
 }
-
 
 .toast-message {
     color: white;

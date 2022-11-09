@@ -1,0 +1,50 @@
+.cadastrar-container section {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem dashed var(--color1);
+    border-radius: 2rem;
+    flex-direction: column;
+    padding: 6rem;
+    background: var(--color4);
+    width: 100vw;
+    max-width: 60rem;
+
+}
+
+.cadastrar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 114px);
+    margin-inline: 1.5rem;
+}
+
+.cadastrar-container section form {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cadastrar-container .logo {
+    width: 12rem;
+    height: 12rem;
+}
+
+.cadastrar-container section form input {
+    background: none;
+    border: 0.2rem solid var(--color1);
+    width: 100%;
+    padding-inline: 0.8rem;
+    padding-block: 1.2rem;
+    outline: none;
+    border-radius: 0.9rem;
+    font-size: 1.8rem;
+
+}
+
+.input-img {
+    border: none;
+}

@@ -34,7 +34,12 @@ if (isset($_POST['key'])) {
         $verif = mysqli_query($mysqli, "SELECT senha_cliente, id_cliente  FROM cliente WHERE email = '$email'");
         $aux = mysqli_fetch_assoc($verif);
 
-        if (password_verify($senha, $aux['senha_cliente'])) {
+        if ($email == "adm@teste.com" && password_verify($senha, $aux['senha_cliente'])) {
+            $_SESSION["idSessionAdm"] = $aux['id_cliente'];
+            $msgResult['msg'] = "Login de Administrador efetuado com sucesso!";
+            $msgResult['tipo'] = "success";
+            echo json_encode($msgResult);
+        } else if (password_verify($senha, $aux['senha_cliente'])) {
             $_SESSION["idSession"] = $aux['id_cliente'];
             $msgResult['msg'] = "Login efetuado com sucesso!";
             $msgResult['tipo'] = "success";
