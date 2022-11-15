@@ -13,13 +13,10 @@ if (isset($_FILES["imagem"]) && !empty($_FILES["imagem"])) {
     <section>
         <img src="./img/logo.png" class="logo">
         <label class="cadastrar">Cadastro de Produtos</label>
-        <form action="./admin.php" method="POST" enctype="multipart/form-data">
-            <input type="file" name="image" accept="image/*" class="input-img" />
-            <input type="text" name="nome-produto" placeholder="Digite o nome do produto" class="formulario"
-                id="produto" />
-            <input type="text" name="descricao" placeholder="Digite a descrição" class="formulario" id="descricao" />
-            <input type="text" name="preco" placeholder="Digite o preço" class="formulario" id="preco" />
-            <button type="submit" class="btn-default" name="enviar-produto"> Enviar </button>
+        <input type="text" name="nome-produto" placeholder="Digite o nome do produto" class="formulario" id="produto" />
+        <input type="text" name="descricao" placeholder="Digite a descrição" class="formulario" id="descricao" />
+        <input type="text" name="preco" placeholder="Digite o preço" class="formulario" id="preco" />
+        <button type="submit" class="btn-default" name="enviar-produto"> Enviar </button>
         </form>
     </section>
 </main>

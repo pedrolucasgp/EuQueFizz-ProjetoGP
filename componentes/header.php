@@ -21,16 +21,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/toastr.min.css">
+    <link rel="stylesheet" href="./css/loja.css">
+    <link rel="stylesheet" href="./css/carrinho.css">
 </head>
 
 <body>
+    <?php require_once("./componentes/carrinho.php"); ?>
     <header>
         <section>
             <a href="index.php"><img src="./img/logo.png" class="logo" /></a>
 
             <nav class="navbar">
-                <a href="index.php">Início</a>
-                <a href="loja.php">Loja</a>
+                <a href="index.php">Loja</a>
             </nav>
         </section>
         <section>
@@ -40,16 +42,25 @@
                     class="fa-brands fa-whatsapp social-icon"></i></a>
         </section>
         <section>
-            <a href="carrinho.php" class="btn btn-cart">
+            <button class="btn btn-cart" id="abrir-carrinho">
                 <span class="material-icons-outlined">
                     shopping_cart
                 </span>
-            </a>
+            </button>
             <a href="login.php" class="btn btn-login">
                 <span class="material-icons-outlined">
                     person
                 </span>
             </a>
+            <?php
+            if (isset($_SESSION["idSession"])) {
+
+
+            ?>
+            <a href="./sys/sair.php" class="logout">Sair</a>
+            <?php
+            }
+            ?>
         </section>
 
     </header>

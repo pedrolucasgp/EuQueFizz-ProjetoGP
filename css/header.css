@@ -69,6 +69,10 @@ header * {
     color: #f7f7f7;
 }
 
+.logout{
+    color: var(--color4);
+}
+
 @media(max-width: 768px) {
 
     header,
