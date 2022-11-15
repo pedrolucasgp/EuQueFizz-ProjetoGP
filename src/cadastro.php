@@ -80,8 +80,13 @@ $("#cadastro").click(function() {
             "hideMethod": "fadeOut"
         },
         setTimeout(function() {
-            window.location.assign("login.php")
-
+            if (r.tipo == "success") {
+                window.location.assign("login.php")
+            }
+            else{
+                
+            }
+            
         }, 3200);
     }).fail(function() {
 

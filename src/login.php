@@ -69,7 +69,10 @@ $("#login").click(function() {
             "hideMethod": "fadeOut"
         },
         setTimeout(function() {
-            history.go(-1)
+            if (r.tipo == "success") {
+                history.go(-1)
+            }
+            
         }, 3200);
     }).fail(function() {
 
